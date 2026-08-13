@@ -64,7 +64,7 @@ const leaders = [
             ],
         },
 
-        image: "/src/assets/img/jinnah.png",
+        image: "../assets/img/jinnah.png",
     },
 
     {
@@ -126,7 +126,7 @@ const leaders = [
             ],
         },
 
-        image: "/src/assets/img/iqbal.png",
+        image: "../assets/img/iqbal.png",
     },
 
     {
@@ -188,7 +188,7 @@ const leaders = [
             ],
         },
 
-        image: "/src/assets/img/liaquat.png",
+        image: "../assets/img/liaquat.png",
     },
 
     {
