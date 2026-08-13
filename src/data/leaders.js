@@ -1,3 +1,8 @@
+import jinnah from "../assets/img/jinnah.png";
+import iqbal from "../assets/img/iqbal.png";
+import liaquat from "../assets/img/liaquat.png";
+import fatima from "../assets/img/fatima.png";
+
 const leaders = [
     {
         id: 1,
@@ -16,7 +21,9 @@ const leaders = [
 
         short: {
             en: "The visionary leader whose determination and political struggle played a central role in the creation of Pakistan.",
+
             roman: "Woh azeem rehnuma jinki siyasi jadd-o-jehad aur azm ne Pakistan ke qiyam mein bunyadi kirdar ada kiya.",
+
             ur: "وہ عظیم رہنما جن کی سیاسی جدوجہد اور عزم نے پاکستان کے قیام میں بنیادی کردار ادا کیا۔",
         },
 
@@ -64,7 +71,7 @@ const leaders = [
             ],
         },
 
-        image: "../assets/img/jinnah.png",
+        image: jinnah,
     },
 
     {
@@ -84,7 +91,9 @@ const leaders = [
 
         short: {
             en: "A philosopher and poet whose political thought contributed to the intellectual development of the idea of a separate Muslim homeland.",
+
             roman: "Ek falsafi aur shair jinki siyasi soch ne alag Muslim watan ke tasawwur ki fikri bunyad ko mazboot kiya.",
+
             ur: "ایک فلسفی اور شاعر جن کی سیاسی سوچ نے الگ مسلم وطن کے تصور کی فکری بنیاد کو مضبوط کیا۔",
         },
 
@@ -126,7 +135,7 @@ const leaders = [
             ],
         },
 
-        image: "../assets/img/iqbal.png",
+        image: iqbal,
     },
 
     {
@@ -146,7 +155,9 @@ const leaders = [
 
         short: {
             en: "A key statesman who worked closely with Jinnah and played an important role in the early years of Pakistan.",
+
             roman: "Ek aham siyasi rehnuma jinhon ne Jinnah ke saath mil kar Pakistan ke ibtidai daur mein aham kirdar ada kiya.",
+
             ur: "ایک اہم سیاسی رہنما جنہوں نے جناح کے ساتھ مل کر پاکستان کے ابتدائی دور میں اہم کردار ادا کیا۔",
         },
 
@@ -188,7 +199,7 @@ const leaders = [
             ],
         },
 
-        image: "../assets/img/liaquat.png",
+        image: liaquat,
     },
 
     {
@@ -208,7 +219,9 @@ const leaders = [
 
         short: {
             en: "A prominent figure of the Pakistan Movement who stood beside Quaid-e-Azam and later became an important voice in Pakistan's political life.",
+
             roman: "Tehreek-e-Pakistan ki numaya shakhsiyat jo Quaid-e-Azam ke saath khari rahin aur baad mein Pakistan ki siyasi zindagi mein bhi aham awaaz banin.",
+
             ur: "تحریکِ پاکستان کی نمایاں شخصیت جو قائدِ اعظم کے ساتھ کھڑی رہیں اور بعد میں پاکستان کی سیاسی زندگی میں بھی اہم آواز بنیں۔",
         },
 
@@ -250,7 +263,7 @@ const leaders = [
             ],
         },
 
-        image: "/src/assets/img/fatima.png",
+        image: fatima,
     },
 ];
 
