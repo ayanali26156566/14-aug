@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #03150b;
+  color: white;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.35);
+  color: white;
+}
+
+/* Custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #03150b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #08733a;
+  border-radius: 999px;
+}
+
+/* Slow background movement */
+
+@keyframes slow-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.35;
+  }
+
+  50% {
+    transform: scale(1.15);
+    opacity: 0.55;
+  }
+}
+
+.animate-slow-pulse {
+  animation: slow-pulse 8s ease-in-out infinite;
+}
+
+/* Floating particles */
+
+@keyframes particle {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.6;
+  }
+
+  80% {
+    opacity: 0.25;
+  }
+
+  100% {
+    transform: translateY(-120px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.animate-particle {
+  animation: particle 7s linear infinite;
+}
+
+/* Text shine */
+
+@keyframes shine {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: 200% center;
+  }
+}
+
+.animate-shine {
+  animation: shine 5s linear infinite;
+}
+
+/* Crescent floating */
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-18px) rotate(4deg);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
